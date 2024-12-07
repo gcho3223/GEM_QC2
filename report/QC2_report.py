@@ -17,7 +17,7 @@ from fpdf.enums import XPos, YPos
 
 "Edit this part of the acode according to the location of your QC2 files"
 "---------------------------------------------------------------------------"
-data_folder='QC2_results/%s'%(str(sys.argv[1]))
+data_folder='%s'%(str(sys.argv[1]))
 subfolder='/'
 part1_file=''
 part1_file='%s'%(str(sys.argv[2]))

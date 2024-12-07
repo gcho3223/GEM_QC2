@@ -17,7 +17,7 @@ import os
 import fnmatch
 import sys
 "------------------USER INPUT"
-data_folder='QC2_results/%s/'%(str(sys.argv[1])) #Choose data folder
+data_folder='%s/'%(str(sys.argv[1])) #Choose data folder
 index_to_open=int(sys.argv[2])
  #Choose the index of the file to be opened
 threshold=7 #Threshold (nA) to add a point to the I-V plot. This is used to avoid including current spikes in the I-V plot
