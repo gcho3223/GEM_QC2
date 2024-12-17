@@ -1,4 +1,4 @@
-# Dependancies
+# 📦Dependancies
 - need to install the following packages
 ```
 pip install numpy==1.22.4
@@ -10,7 +10,7 @@ pip install mplhep
 pip install openpyxl
 ```
 
-# How to run
+# 💡How to run
 ```
 python3 macro_QC2.py <option>
 ```
@@ -20,7 +20,7 @@ python3 macro_QC2.py <option>
 ```report```: make report   
 ```all```: make all steps (megger->iv->report)
 
-# Importances & Notes
+# ⚠️Importances & Notes
 - You should **right the date**   
 - **Do not change the file name**   
 - All steps can be done individually, but **make the megger file first**   
@@ -36,7 +36,7 @@ python3 macro_QC2.py <option>
     - to make the report file, need to have the IV plot file and megger file   
     - will make the report file and save it in ```pdf_reports``` directory   
 
-## 1. Megger Generator
+## 1. 📑Megger Generator
 ```python3 QC2_megger_generator.py <date>``` or ```python3 macro_QC2.py megger```   
 1. enter the date in the format of ```YYYYMMDD```   
 then, megger directory will be created in ```QC2_results/data_ME0_foils_<date>``` and start entering the megger data   
@@ -82,7 +82,7 @@ Imp Spark @ 2.0 min:
 ```
 6. check the values again, and enter ```y``` or ```n```
 
-## 2. IV Plot Generator
+## 2. 📈IV Plot Generator
 ```python3 macro_QC2.py iv```   
 - enter the date
 - the generator will runinng for the number of indices of the foils   
@@ -91,12 +91,12 @@ Imp Spark @ 2.0 min:
 - ```index_to_open``` is the index of the foil to open, not the foil channel number!!   
 - iv plots will be saved in ```IVplot``` directory   
 ```
-📦 IVplot   
-├── 📜txt   
+📂 IVplot   
+├── 📂txt   
 │ └── 📜QC2LONG_PART1_*IVplot.txt
 └── 📜QC2LONG_PART1_*IVplot.png
 ```
-## 3. Report Generator
+## 3. 📈Report Generator
 ```python3 macro_QC2.py report```   
 - enter the date
 - the generator will run for all foils to make the report      
