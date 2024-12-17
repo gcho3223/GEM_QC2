@@ -26,7 +26,7 @@ python3 macro_QC2.py <option>
 - All steps can be done individually, but **make the megger file first**   
 - If you want to make report, you should **make the IV plot first** 
 
-# Sequence
+# 🏹Sequence
 - ```macro.QC2.py all``` will be followed by megger generator, IV plot generator, and report generator   
 1. megger generator (```QC2_megger_generator.py <date>```)     
     - will be recieved from you, and you should input the megger data in the megger generator   
